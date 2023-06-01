@@ -1,3 +1,6 @@
+![advertise](https://github.com/liymntnai/bazaar/assets/116175180/f3b81e36-e4c3-4941-919d-b1258962b429)
+![index-home](https://github.com/liymntnai/bazaar/assets/116175180/6f208c50-9419-402b-9b98-02f1c897cbf7)
+![smartphone](https://github.com/liymntnai/bazaar/assets/116175180/4d80b2da-20ba-4760-9a2b-e99756af8b0d)
 # bazaar
 This project is an online market in which people can sell and buy items online. Depending on the category, you can make a search and find the item you are looking for.
 Features:
