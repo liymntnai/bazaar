@@ -1,0 +1,408 @@
+@font-face {
+    font-family: "Sacramento-Regular";
+    src: url(../bakoz);
+}
+:root{
+    --brown: #ef2727aa;
+    --bgd-color:rgb(254,206,161);
+    --pink: #f07cc3;
+}
+body{
+  padding: 0px;
+  /* background-color: var(--bgd-color); */
+}
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+    text-transform:capitalize;
+}
+
+#logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 54px;
+    color: #f49014;
+    text-shadow: 5px 5px;
+    text-indent: 2px 2px;
+    margin: 0px 35px;
+}
+.header{
+    background-color:#f1b6b6aa ;
+    display: flex;
+    justify-content: space-around;
+
+}
+#navbar{
+  margin:auto;
+  padding: 5px;
+  /* background-color: white; */
+}
+#navbar ul li{
+  display: inline;
+  margin-right: 15px;
+  font-size: 18px;
+
+}
+#navbar ul li a{
+   color: rgba(80, 80, 80, 1);
+   /* color: antiquewhite; */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: serif;
+}
+#navbar ul li a:hover{
+  color: orangered;
+}
+.buy-sell-box{
+    display: flex;
+    margin-left:25px;
+    padding: 5px;
+}
+.buy-sell-box .box{
+   display: flex;
+    margin-right: 30px;
+}
+.box img{
+    width: 25px; height: 25px;
+}
+.box h3{
+    font-weight: medium;
+        /* margin-top: 2px; */
+}
+.sell-box{
+  /*     margin-top: -70px; */
+    /* float: right; */
+    /* margin-top: -80px; */
+    margin: 0 20px;
+    background: #fa7a30;
+    border-radius: 10px;
+    color: black;
+    padding: 5px 15px;
+    font-size: 24px;
+}
+
+.sell-box:hover{
+    /* background-color: #c54c06; */
+    transition: 0.6s;
+    background-color: #ad6d1f;
+    text-decoration: none;
+    color: black;
+  }
+.menu{
+  position: relative;
+    color:rgb(34, 61, 65);
+    border: 1px solid #ccc;
+    /* background-color: orangered; */
+    padding: 10px;
+    background-color: var(--brown);
+    font-weight:bold;
+    font-size:medium;
+    box-shadow: 0 0.5rem 0.5rem #999;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif
+}
+.menu .looking-for-box{
+text-align: center;
+}
+select{
+    width: 130px;
+}
+.text-input{
+    width: 130px;
+    border-radius: 5px;
+    margin-right: 10px;
+    height:25px;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.number-input{
+    width:80px;
+    font-weight: 600;
+}
+.filter-search-box fieldset{
+border: 1px solid #dcdcdc;
+padding: 5px 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-radius: 5px;
+}
+.filter-search-box legend{
+background-color: #efefef;
+border: 1px solid #dcdcdc;
+padding: 1px 3px;
+text-align: left;
+color: black;
+width: 15%;
+border-radius: 5px;
+font-size: 16px;
+}
+.search-box{
+    margin: 2px 10px;
+    display: inline;
+    width: 32%;
+}
+#submit{
+    float: right;
+    margin-right:30px;
+    margin-bottom: 5px;
+    background: #0d7e40;
+    border-radius: 10px;
+    color: #dcdcdc;
+    padding: 5px 10px;
+}
+#submit:hover{
+    transition: 0.6s;
+    background-color: #124428;
+
+}
+.category-list{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+  max-width: 960px;
+  text-align: center;
+  margin: 10px auto;
+}
+.category-list .box{
+    text-align: center;
+    /* margin: 15px; */
+    width: 300px;
+    padding: 10px;
+    /* margin: 5px 10px 10px 0px; */
+    /* flex: 1; */
+    border: 1px solid #999;
+    background-color: var(--bgd-color);
+}
+.category-list .box:hover{
+    background:antiquewhite
+}
+.category-list .box .image:hover{
+transform: scale(1.1);
+}
+.box .description .title{
+    font-size: 24px;
+    font-weight: 800;
+    /* line-height: 3px; */
+    /* margin-bottom: 2px; */
+    text-align: center;
+    line-height: 0;
+
+}
+.box .description .subtitle, .box .description .title{
+    color: rgb(29, 29, 29);
+}
+.box .description .title:hover, .box .description .subtitle:hover{
+    color:orangered;
+}
+.content .box .description{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.category-list .box .image{
+text-align: center;
+}
+.category-list .box .image img{
+width: 120px;
+height: 120px;
+}
+
+
+
+
+
+/* The main bakoz-category elements */
+.pagination-box{
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.pagination-box .breadcrumb-item a{
+    color: rgb(34, 34, 34);
+    font-size: large;
+    font-weight:600;
+}
+.pagination-box .breadcrumb-item a:hover{
+    color:rgba(255, 68, 0, 0.856);
+}
+.other-category{
+    background: rgb(255, 255, 255);
+    border-radius:10px;
+    margin-left: 10px;
+    height: fit-content;
+    margin-right: 30px;
+    width: 20%;
+    float: left;
+    border: 1px solid #d0d0d0;
+}
+
+.other-category h1{
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+text-align: center;
+color: white;
+background-color: orangered;
+padding: 0px 10px;
+border-bottom: 1px solid #d0d0d0;
+
+}
+.other-category a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 5px 10px;
+    font-size: large;
+    }
+.other-category a:hover{
+        color: orangered;
+        transition: 0.2s;
+}
+.description{
+    width: 80%;
+    display: block;
+}
+.description .heading{
+background-color: #aeaeae;
+border-radius: 5px;
+display: flex;
+}
+.filter-image{
+    width: 10px;
+    height: 5px;
+}
+.primary-column{
+    min-width: 460px;
+flex:3;
+margin-right: 10px;
+}
+.item-price{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 125%;
+    font-weight: bold;
+}
+.item-town{
+    font-weight:600;
+    font-size: 1.1em;
+    font-family: ChunkFiveRegular;
+}
+.item-address{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.1em;
+    font-weight:400;
+}
+.description .heading .primary-column img{
+width: 25px; height: 25px;
+}
+.columns{
+    flex:2;
+    margin: 0px 5px;
+}
+.image-box{
+display: flex;
+margin-bottom: 10px;
+}
+.image-box:hover{
+    background-color: #ffd9f0c2;
+}
+.title{
+    font-size:1.5rem;
+    max-width:260px;
+}
+.description .primary-column img{
+    float: left;
+    width: 150px;
+    height: 120px;
+    margin: 3px 6px 3px 3px;
+}
+.primary-column p{
+    width: 260px;
+    height: 90px;
+    overflow: hidden;
+}
+.listed-time{
+   float: right;
+    top:2px;
+    right: 10px;
+}
+.pg-next{
+    text-align: center;
+    margin: 10px;
+}
+.description p ul li{
+display: inline;
+margin: 10px;
+font-weight: 600;
+}
+
+.footer{
+    padding: 30px 20px;
+    background: rgb(187, 186, 186);
+
+}
+
+
+/* Advertise page */
+.ad-input{
+    width: 200px;
+  }
+.advertise-heading{
+background-color: #bcb1b1;
+padding: 5px;
+margin: 0px auto 10px auto;
+width:50%;
+text-align: center;font-size: 28px;
+}
+
+.con{
+display: flex;
+}
+.user-info{
+margin-bottom: 30px;
+}
+.account-info{
+height: 300px;
+width: 260px;
+border:1px solid black;
+box-shadow:  0 0.5rem 0.5rem #999;
+
+}
+.account-info .headingAcc{
+background-color: #999;
+font-weight: 600;
+margin-left: 0
+}
+.account-info a{
+color: black;
+
+}
+.account-info a:hover{
+color: skyblue;
+
+}
+.account-info li{
+padding: 10px;
+margin-left: 10px;
+text-decoration: none;
+display: block;
+}
+.Advertise-box{
+margin-left: 30px;
+}
+.eNo_ads_found{
+  color: red;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+/* Found in Advertise.php */
+.required{
+ color:red;
+}
+/* Single post */
+.single-post{
+  text-decoration: none;
+  color: black;
+  background-color:blue;
+}
